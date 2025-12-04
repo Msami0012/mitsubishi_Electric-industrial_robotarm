@@ -1,1 +1,46 @@
+' ============================================
+' Advanced Palletizing Program
+' Features:
+' - Configurable pallet size (rows, cols, layers)
+' - Variable override speed
+' - Safety height management
+' - Open/close retries for gripper
+' - Clean loop structure with exit condition
+' ============================================
+
+' ---------- CONFIGURATION SECTION ----------
+Def Plt 1, P10, P11, P12, 4, 3, 1     ' Pallet 1 with 4 cols, 3 rows, 1st layer ref
+                                      ' (Adjust cols/rows/layers as needed)
+
+M1 = 1                                ' Part index on pallet
+Layer = 1                             ' Current layer index
+MaxLayer = 3                          ' Number of layers (example)
+PartsPerLayer = 12                    ' 4 x 3 = 12 positions per layer
+
+OVRD = 80                             ' Default override speed (%)
+PickOVRD = 60                         ' Slower speed near pick
+PlaceOVRD = 70                        ' Slower speed near place
+TravelOVRD = 100                      ' Fast speed for travel
+
+SafeZ = -80                           ' Safety height above all obstacles
+PickZ = -50                           ' Height above pick point
+PlaceZ = -50                          ' Height above pallet position
+
+GripCloseDly = 0.5                    ' Delay after closing gripper
+GripOpenDly  = 0.3                    ' Delay after opening gripper
+ApproachDly  = 0.3                    ' Delay after approach
+BetweenPartsDly = 0.2                 ' Delay between cycles
+
+MaxGripRetry = 2                      ' Try to close gripper multiple times if needed
+
+' ---------- INITIAL STATE ----------
+HOpen 1                               ' Ensure gripper is open
+OVRD TravelOVRD
+Mov P1, SafeZ                         ' Move to safe height above pick position
+
+
+' ---------- MAIN PALLETIZING LOOP ----------
+*MainLoop
+
+    ' ---- CHECK IF CURRENT LAYER IS COMPLETE ----
 
